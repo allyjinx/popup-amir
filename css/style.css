@@ -1,0 +1,268 @@
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  font-size: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.header-title{
+  color: #8EA44E;
+  text-align: center;
+  font-size: 100px;
+  padding-top: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: rgb (91,91,91);
+  list-style: none;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F3CDDA;
+  color: white;
+  background-image: url("./img/background.jpg;");
+}
+
+.home-pic{
+  width: 800px;
+  height: 600px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+
+}
+
+.top-bar ul {
+  background-color: white;
+  color: #8EA44E;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 50%;
+  margin-right: 50%;
+  text-align: center;
+}
+
+
+.dropdown{
+    outline: none;
+    border: none;
+    position: absolute;
+    padding: 50%;
+}
+
+
+.dropdown a:hover{
+  text-align: center;
+  background-color: white;
+  color:  #F3CDDA;
+}
+
+.buttonmenu {
+  font-size: 15px;
+  background-color: white;
+  color: #8EA44E;
+  list-style: none;
+  margin-left: 21%;
+  margin-right: 15%
+}
+
+.buttonmenu a {
+  color: #8EA44E;
+  text-align: center;
+  /* margin-left: 33%; */
+}
+
+.buttonmenu a:hover {
+  color:  #F3CDDA;
+  text-align: center;
+  outline: none;
+  float: none;
+}
+
+
+/* scroll up button*/
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(255,255,255); /* Set a background color */
+  color: rgb(91,91,91); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgb(91,91,91); /* Add a dark-grey background on hover */
+  color: rgb(255,255,255);
+}
+
+/* end scroll up button */
+
+footer img {
+  max-width: 450px;
+  max-height: 300px;
+}
+
+
+.footer-links{
+  display: inline-flex;
+}
+
+.footer-linka{
+  display: inline-flex;
+  padding: 25px;
+}
+
+.footer-linkb{
+  display: inline-flex;
+  padding: 25px;
+}
+
+.footer-linkc{
+  display: inline-flex;
+  padding: 25px;
+}
+
+.footer-linkd{
+  display: inlink-flex;
+  padding: 25px;
+}
+
+.footer{
+  background-color: white;
+  color: #8EA44E;
+  width: 100%;
+}
+
+
+.card--material{
+  text-align: center;
+  background: white;
+  color: #526812;
+  font-size: 90px;
+  height: 200px;
+  padding-top: 30px;
+}
+
+.card--material-header{
+  background: white;
+  color: black;
+}
+
+.card--material__title{
+  font-size: 50px;
+}
+
+.column {
+  float: center;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+  /* position: relative; */
+  display: inline-block;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+}
+
+.row{
+  text-align: center;
+  margin: auto;
+}
+
+.roww{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+
+.designers-title{
+  text-align:center;
+}
+
+.payment{
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+  padding: 15px;
+}
+
+.unbold-title{
+  font-size:20px;
+  text-align: center;
+  color: #F778A1;
+}
+
+.returns{
+  text-align: center;
+  font-size: 22px;
+  padding: 35px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.payment-pictures{
+  display: inline-block;
+  vertical-align: middle;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.a link{
+  color:#white;
+}
+
+
+.about-us{
+  padding bottom: 4
+}
+
+.resume{
+  text-align: center;
+}
+
+.label{
+  color: white;
+}
+
+.contact-button{
+  background-color: white;
+  width:100px;
+  height: 50px;
+  color: #526812;
+}
+
+.contact-button:hover{
+  background-color: #F3CDDA;
+}
+
+.contact{
+  margin-left: 5%;
+  margin-right: 25%;
+}
+
+.upload-buttons{
+  text-align: center;
+  display: block;
+
+}

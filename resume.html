@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="card card--material">
+      <div class="card__title card--material__title_resume">M.I.A</div>
+      </div>
+
+<br>
+</br>
+<div class="returns">
+<h2>Application Form</h2>
+</div>
+
+
+<form>
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="medium-6 cell">
+        <label style="color: white;">Name
+          <input type="text" placeholder="">
+        </label>
+      </div>
+      <div class="medium-6 cel">
+        <label style="color: white;">Email Address
+          <input type="text" placeholder="">
+        </label>
+      </div>
+    </div>
+  </div>
+</form><form>
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+      <div class="medium-6 cell">
+        <label style="color: white;">Phone Number
+          <input type="text" placeholder="">
+        </label>
+      </div>
+    </div>
+  </div>
+</form>
+<br>
+</br>
+
+
+  <div class="upload-buttons">
+    <p> Please Upload Resume Here</p>
+  <input type="file" id="real-file" hidden="hidden"/>
+  <button type="button" id="custom-button" class="contact-button"> CHOOSE A FILE</button>
+  <span id="custom-text"> NO FILE CHOOSEN</span>
+  <br></br>
+  <p> Please Upload Photo of Yourself Here</p>
+  <input type="file" id="real-file" hidden="hidden"/>
+  <button type="button" id="custom-button" class="contact-button"> CHOOSE A FILE</button>
+  <span id="custom-text"> NO FILE CHOOSEN</span>
+</div>
+
+
+<br>
+</br>
+
+
+<div class="resume">
+<h3>PLEASE TELL US ABOUT YOURSELF!</h3>
+</div>
+
+<textarea rows="12" cols="100">
+</textarea>
+</div>
+
+<button onclick="clickAlert()" class="contact-button" >Submit</button>
+
+<br>
+</br>
+
+
+
+</body>
+
+
+<script type="text/javascript">
+
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+
+function clickAlert() {
+  alert("Thank You! We will review your submission and be in touch");
+}
+
+realFileBtn.addEventListener("change", function() {
+  if(realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+        /[\/\\]([\w\d\s\.\-\(\)]+)$/
+      )[1];
+  } else {
+    customTxt.html = "No File Choosen";
+  }
+});
+
+
+
+
+
+</script>
+
+</html>
